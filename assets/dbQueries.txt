@@ -1,0 +1,28 @@
+CREATE TABLE IF NOT EXISTS cms_access_levels (
+	access_lvl tinyint(4) NOT NULL auto_increment,
+        access_name varchar(50) NOT NULL default '',
+        PRIMARY KEY (access_lvl));
+       
+INSERT IGNORE INTO cms_access_levels
+	VALUES (1, 'Users'), (2, 'Moderator'), (3, 'Administrator');
+
+CREATE TABLE IF NOT EXISTS cms_articles (
+	article_id int(11) NOT NULL auto_increment,
+	author_id int(11) NOT NULL default '0',
+	is_published tinyint(1) NOT NULL default '0',
+	date_submitted datetime NOT NULL default '000-00-00 00:00:00',
+	date_published datetime NOT NULL default '000-00-00 00:00:00',
+	title varchar(255) NOT NULL default '',
+	body mediumtext NOT NULL,
+	PRIMARY KEY (article_id),
+	KEY IdxArticle (author_id, date_submitted),
+	FULLTEXT KEY IdxText (title, body));
+
+CREATE TABLE IF NOT EXISTS cms_comments (
+	comment_id int(11) NOT NULL auto_increment,
+	article_id int(11) NOT NULL default '0',
+	comment_date datetime NOT NULL default '000-00-00 00:00:00',
+	comment_user int(11) NOT NULL default '0',
+	comment text NOT NULL,
+	PRIMARY KEY (comment_id),
+	KEY IdxComment(article_id));

@@ -1,0 +1,44 @@
+a:link {
+	color:#87b636;
+	text-decoration: none;
+}
+
+a:visited {
+	color:#87b636;
+}
+
+body {
+	background-image: url("../img/navy_blue.png");
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+}
+
+#container {
+	width: 940px;
+	margin: -15px auto 0 auto;
+	padding: 25px;
+}
+
+#footer {
+	float:right;
+}
+
+#header {
+	color: #87b636;
+	font-family: 'Walter Turncoat', cursive;
+	border-bottom: 1px solid white;
+}
+
+#logowelcome {
+	padding-left: 20px;
+}
+
+#maincolumn {
+	padding: 20px;
+}
+
+
+#navright {
+	float: right;
+	margin-top: -70px;
+}
