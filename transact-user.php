@@ -1,6 +1,8 @@
 <?php //transact-user.php
 	require_once "conn.php";
 	require_once "http.php";
+	require_once "error_handler.php";
+
 	$salt = "abcdefg";
 	if(isset($_REQUEST["action"]))
 	{

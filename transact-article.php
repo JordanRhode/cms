@@ -2,6 +2,8 @@
 	session_start();
 	require_once "conn.php";
 	require_once "http.php";
+	require_once "error_handler.php";
+
 	if (isset($_REQUEST["action"])) 
 	{
 		switch ($_REQUEST["action"]) 

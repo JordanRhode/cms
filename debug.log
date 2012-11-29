@@ -1,0 +1,4 @@
+[29-Nov-2012 03:30:49] Undefined variable: reult on line 23 of C:\xampp\htdocs\assignments\cms\transact-user.php
+[29-Nov-2012 03:30:49] mysql_fetch_array() expects parameter 1 to be resource, null given on line 23 of C:\xampp\htdocs\assignments\cms\transact-user.php
+[29-Nov-2012 03:32:24] Undefined variable: reult on line 23 of C:\xampp\htdocs\assignments\cms\transact-user.php
+[29-Nov-2012 03:32:24] mysql_fetch_array() expects parameter 1 to be resource, null given on line 23 of C:\xampp\htdocs\assignments\cms\transact-user.php
